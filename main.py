@@ -9,7 +9,9 @@ from train import knn_no_selection, gnb_no_selection, svm_no_selection, decision
     decision_variance_selection, random_forest_variance_selection, gnb_variance_selection
 from pandas import DataFrame
 
-from visualization.data_visualization import draw_roc
+from visualization.data_visualization import draw_roc, draw_perstatus_pie, draw_sex_pie, \
+    draw_number_of_projects_boxplot, draw_age_level_boxplot, draw_seniority_level_A_Histogram, \
+    draw_factory_code_Histogram
 
 
 def run_no_selection(df: DataFrame):
@@ -88,6 +90,13 @@ def run_variance(df: DataFrame):
 if __name__ == "__main__":
     df = load_train_data()
     new_df = remove_empty_data(df)
+
+    draw_perstatus_pie(new_df)
+    draw_sex_pie(new_df)
+    draw_number_of_projects_boxplot(new_df)
+    draw_age_level_boxplot(new_df)
+    draw_seniority_level_A_Histogram(new_df)
+    draw_factory_code_Histogram(new_df)
 
     run_no_selection(new_df)
     run_descriptive_statistics_selection(new_df)

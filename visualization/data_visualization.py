@@ -27,21 +27,21 @@ def draw_sex_pie(df: DataFrame):
 
 
 # 專案總數對離職影響
-def draw_專案總數_boxplot(df: DataFrame):
+def draw_number_of_projects_boxplot(df: DataFrame):
     plt.rcParams['font.family'] = ['Arial Unicode MS']
     plt.rcParams['axes.unicode_minus'] = False
     sns.boxplot(df['PerStatus'], df['專案總數'])
 
 
 # 年齡層級對離職影響
-def draw_年齡層級_boxplot(df: DataFrame):
+def draw_age_level_boxplot(df: DataFrame):
     plt.rcParams['font.family'] = ['Arial Unicode MS']
     plt.rcParams['axes.unicode_minus'] = False
     sns.boxplot(df['PerStatus'], df['年齡層級'])
 
 
 # 年資層級Ａ對離職的影響
-def draw_年資層級Ａ_Histogram(df: DataFrame):
+def draw_seniority_level_A_Histogram(df: DataFrame):
     table = pd.crosstab(df.年資層級Ａ, df.PerStatus)
     table.div(table.sum(1).astype(float), axis=0).plot(kind='bar', stacked=True)
     plt.xlabel('PerStatus')
@@ -49,7 +49,7 @@ def draw_年資層級Ａ_Histogram(df: DataFrame):
 
 
 # 廠區代碼對離職的影響
-def draw_廠區代碼_Histogram(df: DataFrame):
+def draw_factory_code_Histogram(df: DataFrame):
     table = pd.crosstab(df.廠區代碼, df.PerStatus)
     table.div(table.sum(1).astype(float), axis=0).plot(kind='bar', stacked=True)
     plt.xlabel('PerStatus')
