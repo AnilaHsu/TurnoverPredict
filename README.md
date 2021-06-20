@@ -6,6 +6,11 @@ After the data is preprocessed, the data is visualized to understand the overvie
 Finally, the highest-scoring features and algorithms are used to predict employee turnover, and visualize them, and finally produce a report. (reference link: [analysis report](https://github.com/simple1017/TurnoverPredict/blob/master/analysis%20report.pdf))
 
 
+## Library
+- pandas
+- sklearn
+- matplotlib
+
 ## Feature selection
 - statistical method
 - correlation coefficient
