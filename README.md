@@ -1,4 +1,4 @@
-# Employee turnover predict
+# Employee Turnover Predict
 
 
 ## Introduction
@@ -11,12 +11,12 @@ Finally, the highest-scoring features and algorithms are used to predict employe
 - sklearn
 - matplotlib
 
-## Feature selection
-- statistical method
-- correlation coefficient
-- filtering method
+## Feature Selection
+- Statistical method
+- Correlation coefficient
+- Filtering method
 
-## Algorithm
+## ML Algorithm
 - KNN
 - GaussianNB
 - Decision Tree
