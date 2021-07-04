@@ -1,4 +1,3 @@
-![AIdea](https://user-images.githubusercontent.com/50144690/124400683-f4dd4580-dd56-11eb-82f6-17fd93b48f40.jpeg)
 # Employee Turnover Predict
 
 
